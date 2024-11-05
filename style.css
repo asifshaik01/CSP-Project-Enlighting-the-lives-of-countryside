@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rancho&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    overflow-x: hidden;
+    background: #fff;
+    min-height: 100vh;
+
+}
+#header{
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+padding: 30px 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+z-index: 10000;
+}
+.logo{
+    color: #094b65;
+    font-weight: 700;
+    font-size: 2rem;
+    text-decoration: none;
+}
+#header ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+
+}
+#header ul li{
+    list-style: none;
+    margin-left: 20px;
+}
+#header ul li a{
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #094b65;
+    border-radius: 20px;
+}
+#header ul li a:hover,
+#header ul li a.active{
+    background: #094b65;
+    color: #fff;
+}
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section::before{
+    /* content: ''; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top,#094b65,transparent);
+    z-index: 10;
+}
+section img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+#text {
+    position: absolute;
+    color: #094b65;
+    font-size: 10vw;
+    text-align: center;
+    line-height: 0.55em;
+    font-family: 'Rancho', cursive;
+    transform: translateY(-50%);
+}
+#text span{
+    font-size: 0.20em;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-family: 'poppins', sans-serif;
+}
+#btn{
+    
+        text-decoration: none;
+        display: inline-block;
+        padding: 8px 30px;
+        background: #fff;
+        color: #094b65;
+        font-size: 1.2em;
+        font-weight: 500;
+        letter-spacing: 2px;
+        border-radius: 40px;
+        transform: translateY(100px);
+        
+}
+.sec{
+    position: relative ;
+    padding: 100px;
+    background: #094b65; }
+
+.sec h2{
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+.sec p{
+    font-size: 1.2rem;
+    color: #fff;
+}
+.Health{
+    background-color: #fff;
+    
+
+}
+.Health h3{
+    font-size: 3rem;
+  padding-bottom: 1rem;
+  color: #111;
+  text-transform: uppercase;
+}
+.Health span{
+    color: #094b65;
+    text-transform: uppercase;
+}
+.Health p strong{
+color: #094b65;
+padding: 10px;
+font-size: 25px;
+}
+.Health p{
+    color: #111;
+    padding-bottom: 10px ;
+    font-size: 20px;
+}
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+    display: flex;
+  }
+  
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .flip-box-back {
+    background-color: #094b65;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    padding: 20px;
+  }
+  .card-1 {
+    perspective: 1000px;
+    width: 300px;
+    height: 200px;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    border-style: solid;
+    border-color: #094b65;
+}
+
+.card-1:hover {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+.front {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.back {
+    background-color: #d4d4d4;
+    transform: rotateY(180deg);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+.back .pack{
+color: #094b65;
+
+}
+h4{
+    font-size: 25px;
+}
+
+.image-scroller img{
+    width: 20%;
+    height: 20%;
+}
+h1 {
+    text-align: center;
+  }
+  
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    background-color: #094b65;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    border-color: #4caf50;
+  }
+#more {
+    display: none;
+  }
+  .read{
+    background-color: #094b65;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  .read:hover{
+    background-color: #45a049
+  }
+  /*environmental section starts*/
+  
+  .image-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .hover-image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+  }
+  
+  .content-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transition: opacity 0.3s ease;
+  }
+  
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .image-wrapper:hover .hover-image {
+    transform: scale(1.1);
+  }
+  
+  .image-wrapper:hover .content-overlay {
+    opacity: 1;
+  }
+#extra{
+  display: none;
+}
+

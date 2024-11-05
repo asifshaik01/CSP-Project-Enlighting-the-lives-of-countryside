@@ -1,2 +1,2 @@
-# CSP-Project-Enlighting-the-lives-of-countryside
-This is our community service project build for awareness and our activity which was done during the project.
+# Enlightening-the-lives-of-the-country-side
+This web page describes the Community Service Project done by me and my team members so as to step towards development
